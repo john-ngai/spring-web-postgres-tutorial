@@ -26,6 +26,7 @@ podman pull postgres
 ```shell
 podman run --name postgres-db -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
 ```
+
 4. Connect to the postgres server:
 
 ```shell
@@ -63,8 +64,7 @@ curl -s localhost:8080/employees
 ```shell
 curl -s -X POST localhost:8080/employees \
   -H "Content-Type: application/json" \
-  -d '{"firstName": "foo", "lastName": "bar", "dateOfBirth": "2023-05-04"}' \
-      {"id":1,"firstName":"foo","lastName":"bar","dateOfBirth":"2023-05-04"}
+  -d '{"firstName": "foo", "lastName": "bar", "dateOfBirth": "2023-05-04"}'
 ```
 
 4. Verify using curl:
