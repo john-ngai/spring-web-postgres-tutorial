@@ -24,7 +24,7 @@ podman pull postgres
 3. Create and run the postgres container:
 
 ```shell
-podman run --name postgres-db -e POSTGRES_PASSWORD=password -p 5432:5432 -d postgres
+podman run --name postgres-db -e POSTGRES_PASSWORD=password -e PGPORT=6432 -p 6432:6432 -d postgres
 ```
 
 4. Connect to the postgres server:
