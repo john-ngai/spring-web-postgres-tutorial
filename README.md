@@ -56,13 +56,13 @@ mvn spring-boot:run
 2. Test the connection by sending a GET request using curl:
 
 ```shell
-curl -s localhost:8080/employees
+curl -s localhost:8090/employees
 ```
 
 3. Create an employee by sending a POST request:
 
 ```shell
-curl -s -X POST localhost:8080/employees \
+curl -s -X POST localhost:8090/employees \
   -H "Content-Type: application/json" \
   -d '{"firstName": "foo", "lastName": "bar", "dateOfBirth": "2023-05-04"}'
 ```
@@ -70,7 +70,7 @@ curl -s -X POST localhost:8080/employees \
 4. Verify using curl:
 
 ```shell
-curl -s localhost:8080/employees
+curl -s localhost:8090/employees
 ```
 
 5. Switch to the postgres terminal and verify again using psql:
